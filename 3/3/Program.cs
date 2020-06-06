@@ -15,7 +15,7 @@ namespace _3
             double Beta = (Math.Acos((Math.Pow(l2, 2) + Math.Pow(l3, 2) - Math.Pow(l1, 2)) / (2 * l2 * l3)))*(180 / Math.PI);
             double Gamma = (Math.Acos((Math.Pow(l3, 2) + Math.Pow(l1, 2) - Math.Pow(l2, 2)) / (2 * l1 * l3)))*(180 / Math.PI);
 
-            if ((l1 + l2 < l3) || (l2 + l3 > l1) && (l1 + l3 > l2))
+            if ((l1 + l2 > l3) && (l2 + l3 > l1) && (l1 + l3 > l2))
             {
                 triangle = true;
 
